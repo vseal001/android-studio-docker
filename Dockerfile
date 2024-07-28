@@ -5,9 +5,8 @@ LABEL Simon Egli <docker_android_studio_860dd6@egli.online>
 ARG USER=android
 
 RUN dpkg --add-architecture i386
-RUN cp /etc/apt/sources.list /etc/apt/sources.list.bak && \
-    sed -i 's/security.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list && \
-    sed -i 's/archive.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list
+
+RUN sed -i 's/archive.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list
 
 RUN apt-get update && apt-get install -y \
         build-essential git neovim wget unzip sudo \
