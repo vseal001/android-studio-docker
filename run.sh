@@ -1,6 +1,7 @@
 ANDROID_GNSS_PATH_DEFAULT="/home/embuser/aosp-docker/_gnss_hal/"
 ANDROID_GNSS_PATH=${ANDROID_GNSS_PATH:-$ANDROID_GNSS_PATH_DEFAULT}
 AOSP_ARGS=""
+HOST_DISPLAY="X11"
 if [ "$NO_TTY" = "" ]; then
 AOSP_ARGS="${AOSP_ARGS} -t"
 fi
