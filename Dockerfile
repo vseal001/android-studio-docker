@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:18.04
 
 LABEL Simon Egli <docker_android_studio_860dd6@egli.online>
 
